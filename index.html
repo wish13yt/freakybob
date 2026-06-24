@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,8 +61,12 @@
     <main>
         <h1>dead site</h1>
         <p>since i'm so evil just go look at my site and shit <a href="https://squirrelz.xyz">squirrelz.xyz</a> or mine <a href="https://wish13yt.github.io">wish13yt.github.io</a>!</p>
-        <img src="https://www.placemonkeys.com/500/350?random&greyscale">
+        <img id="monkey" src="https://www.placemonkeys.com/500/350?random&greyscale">
+        <script>
+            let options = ["greyscale", "sepia", "blur", "spooky"];
+            let random = options.sort(() => 0.5 - Math.random())[0];
+            document.getElementById("monkey").src = "https://www.placemonkeys.com/500/350?random&" + random;
+        </script>
     </main>
 </body>
-
 </html>
